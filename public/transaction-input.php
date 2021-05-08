@@ -1,6 +1,7 @@
 <?php
 session_start();
-if($_SESSION['validUser'] == 'yes' && $_REQUEST['userID'] == $_SESSION['userID'] || $_SESSION['validEmployee'] == 'yes') {
+if($_SESSION['validUser'] == 'yes' && $_REQUEST['userID'] = $_SESSION['userID'] || $_SESSION['validEmployee'] == 'yes') {
+
 require_once('../inc/Accounts.class.php');
 require_once('../inc/Transactions.class.php');
 
@@ -31,6 +32,7 @@ if (isset($_REQUEST['accountID']) && $_REQUEST['accountID'] > 0)
 
 // apply the data if we have new data
 if (isset($_POST['Save'])) {
+
     $transactionDataArray = $_POST;
     //var_dump(floatval($currentBalance));
     //var_dump($accountDataArray['balance']);
@@ -67,7 +69,7 @@ if (isset($_POST['Save'])) {
         if ($transaction->save() && $account->save())
         {
 
-          header("location: account-save-success.php");
+          header("location: transaction-save-success.php");
 
 
         }

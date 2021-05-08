@@ -8,12 +8,9 @@
     	<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1>User was saved!</h1>
-    <?php if($_SESSION['validEmployee'] == 'yes') { ?>
-      <a href="user-list.php"><button>User list</button></a>
-      <a href="employee-list.php"><button>Employee list</button></a>
-    <?php } else if($_SESSION['validUser'] == 'yes') { ?>
-      <a href="user-welcome.php?userID=<?php echo $_SESSION['userID']; ?>"><button>Home</button></a>
+    <h1>Transaction was saved!</h1>
+    <?php if($_SESSION['validUser'] == 'yes') { ?>
+      <a href="user-accounts.php?userID=<?php echo $_SESSION['userID'];?>"><button>My Accounts</button></a>
     <?php } ?>
   </body>
 </html>

@@ -9,6 +9,10 @@
   </head>
   <body>
     <h1>Account was saved!</h1>
-    <a href="account-list.php"><button>Back to account list</button></a>
+    <?php if($_SESSION['validEmployee'] == 'yes') { ?>
+      <a href="account-list.php"><button>Back to account list</button></a>
+    <?php } else { ?>
+      <a href="user-accounts.php?userID=<?php echo $_SESSION['userID'];?>"><button>My Accounts</button></a>
+    <?php } ?>
   </body>
 </html>

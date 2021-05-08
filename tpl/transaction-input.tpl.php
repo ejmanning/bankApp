@@ -31,8 +31,8 @@
 		Date of Transaction: <input type="date" name="dateOfTransaction" id="dateOfTransaction" value="<?php echo (isset($transactionDataArray['dateOfTransaction']) ? $transactionDataArray['dateOfTransaction'] : ''); ?>"><br />
 
 
-    <input type="text" name="accountID" value="<?php echo (isset($accountDataArray['accountID']) ? $accountDataArray['accountID'] : ''); ?>"/>
-		<input type="text" name="transactionID" value="<?php echo (isset($transactionDataArray['transactionID']) ? $transactionDataArray['transactionID'] : ''); ?>"/>
+    <input type="hidden" name="accountID" value="<?php echo (isset($accountDataArray['accountID']) ? $accountDataArray['accountID'] : ''); ?>"/>
+		<input type="hidden" name="transactionID" value="<?php echo (isset($transactionDataArray['transactionID']) ? $transactionDataArray['transactionID'] : ''); ?>"/>
 		<input name="Save" type="submit" value="Save" />
     <input name="Cancel" type="button" value="Cancel" onclick = "window.history.back()" />
 	</form>

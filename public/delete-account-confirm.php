@@ -1,6 +1,6 @@
 <?php
 session_start();
-if($_SESSION['validUser'] == 'yes' && $_REQUEST['userID'] == $_SESSION['userID'] || $_SESSION['validEmployee'] == 'yes') {
+if($_SESSION['validUser'] == 'yes' && $_REQUEST['userID'] = $_SESSION['userID'] || $_SESSION['validEmployee'] == 'yes') {
   require_once('../inc/Accounts.class.php');
 
   $account = new Accounts();
