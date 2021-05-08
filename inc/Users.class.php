@@ -9,11 +9,11 @@ class Users
     function __construct()
     {
       //local
-      $this->db = new PDO('mysql:host=localhost;dbname=bank;charset=utf8',
-          'erica', 'Frozen21!');
+      /*$this->db = new PDO('mysql:host=localhost;dbname=bank;charset=utf8',
+          'erica', 'Frozen21!');*/
       //host
-      /*$this->db = new PDO('mysql:host=localhost;dbname=emanning11_murphy-cemetery;charset=utf8',
-          'emanning11_murphy-cemetery', 'MurphyCemetery_Group2');*/
+      $this->db = new PDO('mysql:host=localhost;dbname=emanning11_bank;charset=utf8',
+          'emanning11_bank', 'Frozen21!');
     }
 
     function set($dataArray)

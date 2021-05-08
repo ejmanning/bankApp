@@ -26,7 +26,7 @@
         <?php } else if($_SERVER['SCRIPT_NAME'] == '/bank/public/employee-list.php' ) {?>
           <a href="../public/user-input.php"><button>Add Employee</button></a>
         <?php } ?>
-
+            <div style="overflow-x: auto">
               <table>
                   <tr>
                       <th>User ID&nbsp;&nbsp;<a href="<?php echo $_SERVER['SCRIPT_NAME']; ?>?sortColumn=userID&sortDirection=ASC">A</a>&nbsp;<a href="<?php echo $_SERVER['SCRIPT_NAME']; ?>?sortColumn=userID&sortDirection=DESC">D</a></th>
@@ -62,6 +62,7 @@
                   <?php }
                  ?>
               </table>
+            </div>
           </div>
     </body>
 </html>
