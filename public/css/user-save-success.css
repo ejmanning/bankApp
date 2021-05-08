@@ -1,0 +1,28 @@
+
+  body {
+    background-color: #12a370;
+    text-align: center;
+    font-family:'Staatliches';
+  }
+
+  h1 {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    color: white;
+    font-size: 300%;
+  }
+
+  button {
+    cursor: pointer;
+    background-color: #5b5c5e;
+    color: white;
+    font-size: 100%;
+    font-family:'Staatliches';
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    margin-bottom: 2%;
+
+  }
+
+  button:hover {
+      background-color: white;
+      color: #12a370;
+  }

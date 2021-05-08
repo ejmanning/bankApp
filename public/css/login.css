@@ -1,0 +1,43 @@
+body {
+  background-color: #12a370;
+  font-family: 'Staatliches';
+  margin: 5%;
+  text-align: center;
+}
+
+form {
+  background-color: #c2c5cc;
+  margin: auto;
+  width: 50%;
+  padding: 3%;
+  text-align: center;
+  font-size: 150%;
+  line-height: 150%;
+  border: thick solid black;
+}
+
+input {
+  line-height: 150%;
+  font-size: 60%;
+}
+
+button {
+  background-color: black;
+  color: white;
+  font-family: 'Staatliches';
+  font-size: 80%;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+#error {
+  font-family: serif;
+  font-size: 60%;
+  color: red;
+}
+
+@media  screen and (max-width: 600px){
+  form {
+      width: 80%;
+  }
+}

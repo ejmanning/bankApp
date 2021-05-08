@@ -1,0 +1,24 @@
+body {
+  background-color: #12a370;
+  font-family: 'Staatliches';
+  margin: 5%;
+}
+
+#container {
+  background-color: #c2c5cc;
+  margin: auto;
+  width: 50%;
+  padding: 3%;
+  text-align: center;
+  font-size: 150%;
+  line-height: 150%;
+  border: thick solid black;
+}
+
+button {
+  background-color: black;
+  color: white;
+  font-family: 'Staatliches';
+  font-size: 80%;
+  margin-top: 15px;
+}
