@@ -1,6 +1,6 @@
 <?php
 session_start();
-if($_SESSION['validUser'] == 'yes' && $_REQUEST['userID'] == $_SESSION['userID'] || $_SESSION['validEmployee'] == 'yes' || $_SESSION['validUser'] == 'no') {
+if($_SESSION['validUser'] == 'yes' && $_REQUEST['userID'] == $_SESSION['userID'] || $_SESSION['validEmployee'] == 'yes' || $_SESSION['validUser'] == 'no' || $_SESSION['validUser'] == null) {
 
 require_once('../inc/Users.class.php');
 
